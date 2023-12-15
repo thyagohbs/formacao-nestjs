@@ -8,7 +8,7 @@ import {
   Put,
 } from '@nestjs/common';
 import { v4 as uuid } from 'uuid';
-import { AtualizaUsuarioDTO } from './dto/AtualizarUsuario.dto';
+import { AtualizaUsuarioDTO } from './dto/AtualizaUsuario.dto';
 import { CriaUsuarioDTO } from './dto/CriaUsuario.dto';
 import { ListaUsuarioDTO } from './dto/ListaUsuario.dto';
 import { UsuarioEntity } from './usuario.entity';
