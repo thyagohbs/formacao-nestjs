@@ -2,6 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { UsuarioEntity } from './usuario.entity';
 
 @Injectable()
+/* Repository = Responsavel em receber os dados ja validados pelo controller e armazenar
+no banco de dados ou cache */
 export class UsuarioRepository {
   private usuarios: UsuarioEntity[] = [];
 

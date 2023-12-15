@@ -1,6 +1,8 @@
 import { IsEmail, IsNotEmpty, MinLength } from 'class-validator';
 import { EmailEhUnico } from '../validacao/email-eh-unico.validator';
 
+// DTO = Data Transfer Object, responsável em validar os dados enviados pelo controller
+
 export class CriaUsuarioDTO {
   @IsNotEmpty({ message: 'O nome não pode ser vazio' })
   nome: string;
