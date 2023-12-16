@@ -69,7 +69,7 @@ export class UsuarioController {
 
     return {
       usuario: usuarioRemovido,
-      messagem: 'usuário removido com suceso',
+      messagem: 'usuário removido com sucesso',
     };
   }
 }
