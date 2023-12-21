@@ -6,19 +6,19 @@ import {
   ValidatorConstraint,
   ValidatorConstraintInterface,
 } from 'class-validator';
-import { UsuarioRepository } from '../usuario.repository';
+import { UsuarioService } from '../usuario.service';
 
 @Injectable()
 @ValidatorConstraint({ async: true })
 export class EmailEhUnicoValidator implements ValidatorConstraintInterface {
-  constructor(private usuarioRepository: UsuarioRepository) {}
+  constructor(private usuarioService: UsuarioService) {}
 
   async validate(
     value: any,
-    validationArguments?: ValidationArguments,
+    _validationArguments?: ValidationArguments,
   ): Promise<boolean> {
     const usuarioComEmailExiste =
-      await this.usuarioRepository.existeComEmail(value);
+      await this.usuarioService.buscaPorEmail(value);
     return !usuarioComEmailExiste;
   }
 }
