@@ -71,3 +71,17 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Postgres Service
+
+sudo service postgresql stop
+
+sudo docker-compose up -d
+
+npm run typeorm migration:run
+
+## IP Address Postgres Docker - Ubuntu
+sudo docker ps
+
+sudo docker inspect <postgress_container_id>
+
