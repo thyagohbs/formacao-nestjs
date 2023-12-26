@@ -1,1 +1,11 @@
 Controller => Atribui a Entity / Valida os dados => Repository
+
+Controller => Service => Entity
+
+CONTROLLER é responsável por lidar com as requisições HTTP relacionadas ao recurso.
+Ele contém os métodos para criar, ler, atualizar e deletar os objetos do recurso. 
+
+SERVICE é responsável pela lógica de negócio relacionada ao recurso.
+
+ENTITY representa a estrutura de dados do recurso, se estiver usando um banco de dados.
+

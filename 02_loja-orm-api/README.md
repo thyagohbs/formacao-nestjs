@@ -87,3 +87,9 @@ $ sudo docker ps
 
 $ sudo docker inspect <postgress_container_id>
 ```
+
+## Nest CRUD Generator
+```bash
+$ nest g resource <nome-do-recurso> --no-spec
+
+```
