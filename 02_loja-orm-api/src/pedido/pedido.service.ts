@@ -27,4 +27,15 @@ export class PedidoService {
     const pedidoCriado = await this.pedidoRepository.save(pedidoEntity);
     return pedidoCriado;
   }
+
+  async obtemPedidosDeUsuario(usuarioId: string) {
+    return this.pedidoRepository.find({
+      where: {
+        usuario: { id: usuarioId },
+      },
+      relations: {
+        usuario: true,
+      },
+    });
+  }
 }

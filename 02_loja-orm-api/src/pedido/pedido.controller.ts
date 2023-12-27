@@ -21,4 +21,11 @@ export class PedidoController {
     const pedidoCriado = await this.pedidoService.cadastraPedido(usuarioId);
     return pedidoCriado;
   }
+
+  @Get()
+  async obtemPedidosDeUsuario(@Query('usuarioId') usuarioId: string) {
+    const pedidos = await this.pedidoService.obtemPedidosDeUsuario(usuarioId);
+
+    return pedidos;
+  }
 }
