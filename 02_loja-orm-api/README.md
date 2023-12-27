@@ -93,3 +93,17 @@ $ sudo docker inspect <postgress_container_id>
 $ nest g resource <nome-do-recurso> --no-spec
 
 ```
+
+## Criando/Executando as Migrations
+
+# Criando:
+
+```bash
+$ npm run typeorm migration:generate src/db/migrations/nome-da-pasta
+```
+
+# Executando:
+```bash
+$ npm run typeorm migration:run
+```
+
