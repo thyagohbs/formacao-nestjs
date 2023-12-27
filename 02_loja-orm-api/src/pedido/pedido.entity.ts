@@ -36,14 +36,6 @@ export class PedidoEntity {
   usuario: UsuarioEntity;
 
   @OneToMany(() => ItemPedidoEntity, (itemPedido) => itemPedido.pedido, {
-    /* 
-        cascade: true
-
-       sempre que uma entidade PedidoEntity for criada,
-       automaticamente será criada uma entidade ItemPedido também na tabela,
-       estabelecendo assim a relação via cascata. 
-       
-    */
     cascade: true,
   })
   itensPedido: ItemPedidoEntity[];
