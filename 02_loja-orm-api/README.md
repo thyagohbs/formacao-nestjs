@@ -72,20 +72,26 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
-## Postgres Service
-```bash
-$ sudo service postgresql stop
-
-$ sudo docker-compose up -d
-
-$ npm run typeorm migration:run
-```
-
 ## IP Address Postgres Docker - Ubuntu
 ```bash
 $ sudo docker ps
 
-$ sudo docker inspect <postgress_container_id>
+$ sudo docker inspect <postgress_container_id> ##Escolher o da porta 5432
+```
+
+## Postgres Service
+```bash
+$ sudo service postgresql stop
+
+```
+
+## Levantando docker e criando as migrations
+```bash
+$ cd /src
+
+$ sudo docker-compose up -d
+
+$ npm run typeorm migration:run
 ```
 
 ## Nest CRUD Generator
@@ -96,10 +102,10 @@ $ nest g resource <nome-do-recurso> --no-spec
 
 ## Criando/Executando as Migrations
 
-# Criando:
+# Criando(informando o caminho):
 
 ```bash
-$ npm run typeorm migration:generate src/db/migrations/nome-da-pasta
+$ npm run typeorm migration:generate src/db/migrations/nome-da-migration
 ```
 
 # Executando:
