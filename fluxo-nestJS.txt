@@ -13,3 +13,6 @@ e realizar operações como consultas, inserções, atualizações e exclusões.
 
 ENTITY representa a estrutura de dados do recurso, se estiver usando um banco de dados.
 
+
+MODULE é responsável em armazenar os arquivos globais do app.
+
