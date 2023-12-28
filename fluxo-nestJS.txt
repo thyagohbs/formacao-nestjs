@@ -5,7 +5,11 @@ Controller => Service => Entity
 CONTROLLER é responsável por lidar com as requisições HTTP relacionadas ao recurso.
 Ele contém os métodos para criar, ler, atualizar e deletar os objetos do recurso. 
 
-SERVICE é responsável pela lógica de negócio relacionada ao recurso.
+SERVICE é responsável pela lógica de negócio relacionada ao recurso,
+é a ponte entre a camada de controle e a camada de repositórios.
+
+REPOSITORY é responsável em interagir diretamente com o banco de dados
+e realizar operações como consultas, inserções, atualizações e exclusões.
 
 ENTITY representa a estrutura de dados do recurso, se estiver usando um banco de dados.
 
