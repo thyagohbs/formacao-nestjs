@@ -1,6 +1,6 @@
   ---------------
   /*
-    extends PartialType(classe) = Esse recurso pega todos as propriedades da classe mãe e aplica o decorator de @IsOptional().
+    extends PartialType(classe) = em específico, recebe uma classe como parâmetro e aplica em todas as suas propriedades o decorator @IsOptional() do class-validator. 
     
     
   */ 
