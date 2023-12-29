@@ -1,5 +1,11 @@
   ---------------
   /*
+    extends PartialType(classe) = Esse recurso pega todos as propriedades da classe mãe e aplica o decorator de @IsOptional().
+    
+    
+  */ 
+  ---------------
+  /*
     operador In() = verificar se o ID da busca corresponde a algum ID da lista de produtosIds, que retornamos com o map()
     
   */  
