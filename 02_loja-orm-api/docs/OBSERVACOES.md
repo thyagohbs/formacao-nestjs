@@ -1,4 +1,11 @@
   ---------------
+  /* 
+        Object.assing(atribui,pega): Esse método PEGA as propriedades de um objeto passado como segundo parâmetro e ATRIBUI as propriedades de outro objeto do primeiro parâmetro.
+
+         OBS: as propriedades precisam ter o mesmo nome, em ambos!
+  */  
+  
+  ---------------
   /*
     extends PartialType(classe) = em específico, recebe uma classe como parâmetro e aplica em todas as suas propriedades o decorator @IsOptional() do class-validator. 
     
